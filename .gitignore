@@ -1,0 +1,6 @@
+altv-server.exe
+data/vehmodels.bin
+data/vehmods.bin
+modules/js-module/js-module.dll
+modules/js-module/libnode.dll
+server.log
