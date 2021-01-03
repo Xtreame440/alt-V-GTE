@@ -4,3 +4,5 @@ data/vehmods.bin
 modules/js-module/js-module.dll
 modules/js-module/libnode.dll
 server.log
+node_modules/*
+
