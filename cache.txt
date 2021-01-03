@@ -1,0 +1,86 @@
+/*
+alt.on('DBConnectionComplete', () => {
+    //
+});
+
+alt.on('Discord:Opened', (player) => {
+    // Do something with the Player if you want.
+    // Setting a player position is recommended here.
+    alt.logWarning('Discord geöffnet');
+});
+import './systems/login';
+
+/*
+const spawnPos = {
+    x: -2639.872,
+    y: 1866.812,
+    z: 160.135
+};
+
+const standartModel = 'mp_m_freemode_01';
+
+alt.on('playerConnect', (player) => {
+    alt.emitClient(player, 'spawn:Player', spawnPos);
+});
+
+alt.onClient('spawn:Ready', (player, pos) => {
+    player.model = 'mp_m_freemode_01';
+    player.spawn(pos.x, pos.y, pos.z, 500);
+});
+
+chat.registerCmd('loadpage', (player) => {
+    alt.emitClient(player, 'webview:Load');
+});
+
+chat.registerCmd('sethp', (player, args) => {
+    if (!args || args.lenght <= 0) {
+        chat.send(player, '/sethp (amount)');
+        return;
+    }
+
+    let amount = parseInt(args[0]);
+    if (amount < 100) {
+        amount += 100;
+    }
+
+    if (isNaN(amount)) {
+        chat.send(player, 'Dies ist keine Zahl!');
+        return;
+    }
+
+    player.health = amount;
+});
+
+chat.registerCmd('veh', (player, args) => {
+    if (!args || args.lenght <= 0) {
+        chat.send(player, '/veh (model)');
+        return;
+    }
+    spawnVehicle(player, args[0]);
+    // alt.emitClient(null, 'hello:World'); // Sendet an alle spieler
+});
+
+alt.onClient('spawn:Vehicle', spawnVehicle);
+
+function spawnVehicle(player, model) {
+    try {
+        const newVehicle = new alt.Vehicle(model, player.pos.x, player.pos.y, player.pos.z, 0, 0, 0);
+        alt.setTimeout(() => {
+            alt.emitClient(player, 'vehicle:SetInto', newVehicle);
+        }, 10);
+    } catch (err) {
+        chat.send(`Das Modell mit dem Namen ${arg[0]} gibt es nicht.`);
+    }
+}
+
+alt.on('Discord:opened', (player) => {
+    // Do something with the Player if you want.
+    // Setting a player position is recommended here.
+    alt.Warn('Discord geöffnet');
+});
+
+alt.on('Discord:Login', (player, discordInfo) => {
+    // discordInfo contains -> // id, username, avatar, discriminator, public_flags, flags, locale, mfa_enabled
+    console.log(discordInfo.id); // This is their unique discord id.
+});
+*/

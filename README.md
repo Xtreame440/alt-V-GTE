@@ -1,3 +1,3 @@
 # alt-V-GTE
 
-GTA V alt:V German Trucking Empire
+GTA V alt:V German Transport Empire

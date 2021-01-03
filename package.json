@@ -1,28 +1,36 @@
 {
-  "name": "alt-v-gte",
-  "version": "0.0.1",
-  "description": "Transport simulation",
-  "main": "index.js",
-  "dependencies": {
-    "prettier": "^2.2.1"
-  },
-  "devDependencies": {
-    "@altv/types-client": "^1.4.6",
-    "@altv/types-natives": "^1.1.0",
-    "@altv/types-server": "^1.6.5",
-    "@altv/types-webview": "^1.0.2"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Xtreame440/alt-V-GTE.git"
-  },
-  "author": "Xtreame440",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Xtreame440/alt-V-GTE/issues"
-  },
-  "homepage": "https://github.com/Xtreame440/alt-V-GTE#readme"
+    "name": "alt-v-gte",
+    "version": "0.0.1",
+    "description": "Transport simulation",
+    "main": "index.js",
+    "type": "module",
+    "dependencies": {
+        "axios": "^0.21.1",
+        "body-parser": "^1.19.0",
+        "cors": "^2.8.5",
+        "elliptic": "^6.5.3",
+        "express": "^4.17.1",
+        "mysql": "^2.18.1",
+        "prettier": "^2.2.1",
+        "public-ip": "^4.0.3",
+        "sjcl": "^1.0.8",
+        "typeorm": "^0.2.29"
+    },
+    "devDependencies": {
+        "@altv/types-client": "^1.4.6",
+        "@altv/types-natives": "^1.1.0",
+        "@altv/types-server": "^1.6.5",
+        "@altv/types-webview": "^1.0.2",
+        "@types/node": "^14.14.19"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Xtreame440/alt-V-GTE.git"
+    },
+    "author": "Xtreame440",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Xtreame440/alt-V-GTE/issues"
+    },
+    "homepage": "https://github.com/Xtreame440/alt-V-GTE#readme"
 }
