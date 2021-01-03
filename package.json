@@ -1,7 +1,7 @@
 {
     "name": "alt-v-gte",
     "version": "0.0.1",
-    "description": "Transport simulation",
+    "description": "Transport",
     "main": "index.js",
     "type": "module",
     "dependencies": {
