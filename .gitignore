@@ -3,5 +3,4 @@ data/vehmodels.bin
 data/vehmods.bin
 modules/*
 server.log
-node_modules/*
 
