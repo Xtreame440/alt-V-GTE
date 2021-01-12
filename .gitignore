@@ -1,0 +1,12 @@
+node_modules
+modules
+data
+cache
+.vscode
+.prettierrc
+alt-server.exe
+cache.txt
+package-lock.json
+package.json
+server.cfg
+server.log
