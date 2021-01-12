@@ -1,5 +1,10 @@
+/// <reference types="@altv/types-client" />
+/// <reference types="@altv/types-natives" />
 import './events/connectionComplete';
-import './events/disconnect';
+import './events/adminCommands.js';
+import './events/loginscreen.js';
+import './systems/chat';
+import './systems/interiors';
 
 /*
 

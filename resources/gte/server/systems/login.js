@@ -1,5 +1,6 @@
+/// <reference types="@altv/types-server" />
 import * as alt from 'alt-server';
-import chat from 'chat';
+import * as chat from './chat';
 import SQL from '../../../database/database';
 
 alt.log('login.js geladen');
@@ -8,11 +9,13 @@ const db = new SQL();
 
 alt.on('Discord:Opened', (player) => {
     db.selectData('Account', ['id', 'discord'], (data) => {
-        //
+        alt.emitClient(player, 'loginscreen');
+        player.spawn(-80.67692565917969, -833.96044921875, 321.068115234375, 0);
     });
 });
 
 alt.on('Discord:Login', (player, discordInfo) => {
+    //alt.log('Discord:Login');
     // discordInfo contains -> // id, username, avatar, discriminator, public_flags, flags, locale, mfa_enabled
     db.selectData('Account', ['id', 'discord'], (data) => {
         if (data === undefined) {
@@ -58,4 +61,5 @@ function finishLogin(player, data) {
         const pos = JSON.parse(player.data.position);
         player.spawn(pos.x, pos.y, pos.z, 0);
     }
+    alt.emitClient(player, 'connectionComplete');
 }
